@@ -113,7 +113,7 @@ public class LiveStream implements Serializable {
 
 						}
 
-						System.out.println(Arrays.toString(frame10));
+					//	System.out.println(Arrays.toString(frame10));
 
 						printErgebnis(frame10);
 						System.out.println();

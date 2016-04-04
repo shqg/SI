@@ -17,7 +17,7 @@ public class MFCC_Coefficient {
 	
 	public void mfcc(List<List<double[]>> Frames_vor_Hamming){
 		  List<double[]> Frames;
-		  int p = 20;
+		  int p = 30;
 
 	        for (int i = 0; i < Frames_vor_Hamming.size(); i++) {
 	            Frames = Frames_vor_Hamming.get(i);

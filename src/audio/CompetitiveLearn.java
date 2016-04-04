@@ -17,7 +17,7 @@ public class CompetitiveLearn {
              kl.add(Frames.get(randomNum));
           }
 		
-		 for (int a = 0; a < 20; a++) {
+		 for (int a = 0; a < 30; a++) {
 
 	            for (double[] Frame : Frames) { //durch alle Frames.size() Frames 
 

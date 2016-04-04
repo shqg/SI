@@ -71,7 +71,7 @@ public class LiveStream implements Serializable {
     	final MFCC mf = new MFCC((float) 16000.0);
     	final TargetDataLine line;
         line = getAudio();
-        final int use = 10;
+        final int use = 20;
         final int bufferSize = use * 512;
         
         line.open(getAudioFormat());
