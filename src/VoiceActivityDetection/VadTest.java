@@ -27,7 +27,7 @@ public class VadTest {
 	
 	@Test
 	public void test() throws IOException, WavFileException {
-		WavFile wav = WavFile.openWavFile(new File("test.wav"));
+		WavFile wav = WavFile.openWavFile(new File("mixtest.wav"));
 		int sampleRate = (int)wav.getSampleRate();
 		double[] samples = wav.readWholeFile();
 		//System.out.println("samples= "+samples.length);
@@ -73,12 +73,12 @@ public class VadTest {
 
 			if (e > noiseThreshold) {
 				if (start == -1) {
-					start = Utils.samplesToTime(i * 160 + 256, (int)wav.getSampleRate());
+					start = Utils.samplesToTime(i * 256 + 256, (int)wav.getSampleRate());
 				}
 			}
 			else {
 				if (start != -1) {
-					end = Utils.samplesToTime(i * 160 + 256, (int)wav.getSampleRate());
+					end = Utils.samplesToTime(i * 256 + 256, (int)wav.getSampleRate());
 					System.out.println("(" + start + ", " + end + ")");
 					start = end = -1;
 				}
